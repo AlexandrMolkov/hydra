@@ -1,0 +1,140 @@
+.tech{
+
+    padding-top: 110px;
+    position: relative;
+
+    @media (max-width: $tablet){
+        padding-top: 48px;
+
+        &::before {
+            background: none;
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        top: -450px;
+        z-index: -1;
+        min-height: 814px;
+        height: 100%;
+        background: url('/img/svg/services_line.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+
+    &__content{
+        
+        position: relative;
+        z-index: 2;
+    }
+
+    &__top{
+        background: url('/img/pexels-rodnae-productions-8097332.png');
+        background-position: center;
+        text-align: center;
+        min-height: 303px;
+        box-shadow: 0px 0px 4px rgba(192, 183, 232, 0.1);
+        border-radius: 160px;
+        position: relative;
+
+        @media (max-width: $tablet){
+            border-radius: 60px;
+            min-height: 163.35px;
+            height: 163.35px;
+            background-size: cover;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__title{
+        padding-top: 113px;
+        margin-bottom: 10px;
+
+        @media (max-width: $tablet){
+            padding-top: 53px;
+            margin-bottom: 14px;
+        }
+
+        &.title{
+            @media (max-width: $tablet){
+                font-size: rem(16) ;
+                line-height: rem(20) ;
+            }
+        }
+
+
+    }
+    &__subtitle{
+
+        &.subtitle{
+            @media (max-width: $tablet){
+                font-size: rem(24) ;
+                line-height: rem(29) ;
+            }
+        }
+
+    }
+
+
+    &__btn{
+        background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+        border-radius: 100%;
+        width: 70px;
+        height: 70px;
+        box-shadow: 0 0 0 15px rgba($color: #0E0E0E, $alpha: .32);
+        position: absolute;
+        bottom: -35px;
+        left: 50%;
+        transform: translateX(-35px);
+        z-index: 10;
+
+        transition: .3s;
+        &:hover{
+            cursor: pointer;
+            opacity: 0.70;
+        }
+
+        @media (max-width: $tablet){
+            display: none;
+        }
+    }
+
+    &__brands{
+        padding-top: 48px !important;
+
+        @media (max-width: $tablet){
+            height: 190px;
+        }
+    }
+
+    &__brand{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: $tablet){
+            margin-top: -70px;
+        }
+    }
+
+    & .swiper {
+        overflow: visible;
+    }
+
+    & .swiper-button-prev{
+        top: 47%;
+        left: -10px;
+        
+    }
+    & .swiper-button-next{
+        top: 47%;
+        right: -10px;
+    }
+
+
+}

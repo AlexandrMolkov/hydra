@@ -1,0 +1,52 @@
+section.hero
+    .container.hero__container
+        .hero__content
+            .hero__main
+                .hero__item
+                    h1.title.hero__title
+                        span.span-gradient Dive 
+                        span Into The Depths Of 
+                        span.span-gradient Virtual Reality
+                    .hero__text.text.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore 
+                        nisl tincidunt eget. Lectus mauris eros in vitae .
+                    button.btn.hero__btn BUILD YOUR WORLD             
+                .hero__item.flex-end
+                    .hero__image
+                        picture
+                            source(srcset="img/pexels-michelangelo-buonarroti-8728382.webp" type="image/webp")
+                            img(src="img/pexels-michelangelo-buonarroti-8728382.png" alt="Virtual Reality")
+            .hero__bottom
+                .hero__about.hero__about_location
+                    .hero__about-title Pay Us a Visit
+                    .hero__about-subtitle Union St, Seattle, WA 98101, United States
+                .hero__about.hero__about_phone
+                    .hero__about-title Give Us a Call
+                    a.hero__about-subtitle(href="tel:110111111010") (110) 1111-1010
+                .hero__about.hero__about_message
+                    .hero__about-title Send Us a Message
+                    a.hero__about-subtitle(href="mailto:Contact@HydraVTech.com") Contact@HydraVTech.com
+            .swiper.hero__swiper
+                .swiper-wrapper
+                    .swiper-slide(data-hash="slide1")
+                        .hero__slide.hero__slide_location
+                            .hero__slide-content
+                                p.hero__slide-text Union St, Seattle, WA 98101
+                                p.hero__slide-text United States
+                        .swiper-button-prev
+                        .swiper-button-next
+                    .swiper-slide(data-hash="slide2")
+                        .hero__slide.hero__slide_phone
+                            .hero__slide-content
+                                p.hero__slide-text Give Us a Call
+                                a.hero__slide-link(href="tel:110111111010") (110) 1111-1010
+                        .swiper-button-prev
+                        .swiper-button-next
+                    .swiper-slide(data-hash="slide3")
+                        .hero__slide.hero__slide_message
+                            .hero__slide-content
+                                p.hero__slide-text Send Us a Message
+                                a.hero__slide-link(href="mailto:Contact@HydraVTech.com")
+                        .swiper-button-prev
+                        .swiper-button-next

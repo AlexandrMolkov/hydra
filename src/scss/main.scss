@@ -1,0 +1,230 @@
+body {
+    font-family: Montserrat, Arial, sans-serif;
+    color: #fff;
+    background-color: $theme;
+
+    &.lock{
+        overflow: hidden;
+    }
+}
+
+.scroll, .scroll-wrapper{
+    width: 100px;
+    height: 100px;
+    overflow: auto;
+    border: 1px solid black;
+}
+.scroll-wrapper textarea{
+    height: 100px;
+    width: 100px;
+}
+
+.first-section{
+    height: 100vh;
+    min-height: 1010px;
+    background-image: url('/img/svg/hero_line.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    
+    overflow: hidden;
+
+    @media (max-width: $desktop){
+        min-height: 100vh;
+        height: fit-content;
+    }
+}
+.span-gradient{
+    background: linear-gradient(91.57deg, #C0B7E8 -1.02%, #8176AF 36.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.btn{
+    padding: 17px 36px;
+    min-width: 212px;
+    display: block;
+    color: #343045;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: rem(12);
+    line-height: rem(15);
+    font-weight: 700;
+    transition: all .3s;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    border-radius: 40px;
+    margin: 0 auto;
+
+    &:hover{
+        cursor: pointer;
+        opacity: 0.70;
+    }
+
+    @media (max-width: $tablet){
+        width: 100%;
+        max-width: 276px;
+
+        font-size: rem(14);
+        line-height: rem(17);
+    }
+
+    &:hover, &:focus {
+        opacity: .7;
+    }
+    &:active{
+        color: rgba(#fff, .3);
+        opacity: .3;
+    }
+
+    &-border{
+        border: 2px solid #FFFFFF;
+        border-radius: 40px;
+        background: none;
+        color: #fff;
+    }
+
+    &.w-100{
+        width: 100%;
+
+        &:hover{
+            transform: rotate(-1deg) scale(1.1);
+        }
+    }
+    
+}
+.title, .subtitle {
+    font-size: rem(36);
+    line-height: rem(44);
+    text-transform: uppercase;
+
+    @media (max-width: $tablet){
+        font-size: rem(26);
+        line-height: rem(32);
+        text-align: center;
+        width: auto;
+    }
+}
+.title{
+    font-weight: 700;
+
+
+}
+.subtitle {
+    font-weight: 300;
+    font-size: rem(36);
+    line-height: rem(44);
+    text-transform: uppercase;
+
+   
+
+    &-arrow{
+
+
+        position: relative;
+        width: fit-content;
+        &::before {
+            content: "";
+            position: absolute;
+            top: -63%;
+            right: -258px;
+            width: 228px;
+            height: 100px;
+            background-image: url('/img/svg/arrow.svg');
+
+            @media (max-width: $laptop){
+                display: none;
+            }
+        }
+    }
+
+}
+.text {
+    font-size: rem(16);
+    line-height: rem(26);
+
+    @media (max-width: $tablet){
+        font-size: rem(12);
+        line-height: rem(21);
+    }
+}
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#slider {flex-grow: 1;}
+
+*:focus {
+    outline: 1px solid #fff;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;               
+}
+*::-webkit-scrollbar-track {
+    background: $dark;        
+}
+*::-webkit-scrollbar-thumb {
+    background-color: $pink;    
+    border-radius: 20px;       
+    border: 3px solid $light;  
+}
+*{
+    scrollbar-width: $dark;
+    scrollbar-color: $light $pink;
+}
+
+.laptop-hidden{
+    @media (max-width: $laptop){
+        display: none;
+    }
+}
+.tablet-hidden{
+    @media (max-width: $tablet){
+        display: none;
+    }
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+}
+
+section .swiper-button-prev, section .swiper-button-next{
+    width: 44px ;
+    height: 44px ;
+    background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%) ;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 9px rgba(14, 14, 14, 0.32) ;
+    &::after{
+        display: none;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 38px;
+        height: 38px;
+    }
+}
+.swiper-button-prev,.swiper-button-next{
+    transition: .3;
+
+    &:hover{
+
+        opacity: .7;
+    }
+}
+.swiper-button-prev{
+    &::before{
+
+        background-image: url('/img/svg/slider-left.svg');
+    }
+    
+}
+.swiper-button-next{
+    &::before{
+        background-image: url('/img/svg/slider-right.svg');
+    }
+    
+}

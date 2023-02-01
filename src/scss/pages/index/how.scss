@@ -1,0 +1,145 @@
+.how{
+    padding-top: 65px;
+    
+    position: relative;
+
+    padding-bottom: 60px;
+
+    @media (max-width: $tablet){
+        padding-top: 0;
+    }
+    
+    &__content{
+/*         display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+        overflow: visible; */
+        position: relative;
+        z-index: 10;
+    }
+
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 127px;
+        gap: 30px;
+
+        @media (max-width: $tablet){
+            flex-direction: column;
+            gap: 30px;
+            margin-bottom: 0px;
+         }
+    }
+
+    &__item:not(:last-child){
+        margin-right: 228px;
+    }
+
+    &__text{
+        max-width: 652px;
+
+        @media (max-width: $tablet){
+            display: none;
+        }
+    }
+
+    &__title{
+        padding-top: 6px;
+        margin-bottom: 10px;
+    }
+
+    &__swiper{
+        height: 300px;
+    }
+
+    & .swiper-button-prev{
+        top: 82%;
+        
+    }
+    & .swiper-button-next{
+        top: 82%;
+        
+    }
+
+}
+.process__background-line{
+    position: absolute;
+    z-index: 1;
+    top: 218px;
+    width: 100%;
+    height: 300px;
+    background: url('/img/svg/process_line.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (max-width: 1199px){
+        top: 386px;
+    }
+
+
+    @media (max-width: $tablet){
+        background:none
+    }
+}
+
+.process{
+    position: relative;
+
+    &__number{
+        background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+        border-radius: 100%;
+        width: 159px;
+        height: 159px;
+        box-shadow: 0 0 0 19px rgba($color: #0E0E0E, $alpha: .32);
+        font-size: rem(64);
+        line-height: rem(78);
+        color: #343045;
+        font-weight: 700;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 46px;
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text{
+        font-size: rem(24);
+        line-height: rem(29);
+        max-width: 250px;
+        padding-left: 63px;
+
+        position: relative;
+
+        @media (max-width: $tablet){
+            padding-left: 0;
+            text-align: center;
+            padding: 0 30px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -18px;
+            left: 0;
+            width: 67px;
+            height: 67px;
+            background: url('/img/svg/arrow-small-right.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+
+            @media (max-width: $tablet){
+                background:none;
+            }
+        }
+
+    }
+}

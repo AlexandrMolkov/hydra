@@ -1,0 +1,53 @@
+.intro{
+    padding-top: 40px;
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: $tablet){
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    &__item:not(:last-child){
+
+        margin-right: 228px;
+
+        @media (max-width: $laptop){
+            margin-right: 50px;
+        }
+        @media (max-width: $tablet){
+            margin-right: 0;
+        }
+    }
+
+    &__text{
+        max-width: 652px;
+        
+        @media (max-width: $tablet){
+           display: none;
+        }
+
+    }
+
+    &__title{
+        padding-top: 6px;
+        margin-bottom: 10px;
+
+        @media (max-width: $tablet){
+            padding-top: 10px;
+            margin-bottom: 17px;
+            text-align: center;
+        }
+    }
+    &__subtitle{
+
+        @media (max-width: $tablet){
+            width: auto;
+        }
+    }
+}
+    
